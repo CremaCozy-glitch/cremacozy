@@ -56,8 +56,7 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 .dup{display:contents}
 @keyframes scroll{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.dup{display:none}.marquee{-webkit-mask-image:none;mask-image:none}}
-.chip{display:flex;flex-direction:column;align-items:center;gap:8px;width:150px;padding:16px 10px 14px;background:var(--card);border:1px solid #D9CBB9;border-radius:14px;text-align:center;font-weight:600;font-size:.9rem;line-height:1.3;color:var(--head);text-decoration:none}
-.chip svg{width:46px;height:46px;stroke:var(--brand);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.chip img{width:100%;height:86px;object-fit:cover;border-radius:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:var(--card);border:1px solid #D9CBB9;border-radius:999px;padding:8px 18px 8px 14px;font-weight:600;color:var(--head);text-decoration:none}
+.chip svg{width:20px;height:20px;flex:none;color:var(--brand)}
 .chip:hover{border-color:var(--accent);background:#fff}
-.chip:hover svg{stroke:var(--cta)}
+.chip:hover svg{color:var(--cta)}

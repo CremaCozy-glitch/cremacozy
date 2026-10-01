@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="content post">
+  <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> &rsaquo; <a href="{{ page.section_url | relative_url }}">{{ page.section_title }}</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">Last updated: {{ page.last_updated | default: page.date | date: "%B %-d, %Y" }}</p>
+  <p class="disclosure">Disclosure: As an Amazon Associate I earn from qualifying purchases. Some links in this article are affiliate links. <a href="{{ '/affiliate-disclosure/' | relative_url }}">Read the full disclosure</a>.</p>
+  {{ content }}
+  {% if page.faq %}
+  <h2>Frequently asked questions</h2>
+  {% for f in page.faq %}
+  <h3>{{ f.q }}</h3>
+  <p>{{ f.a }}</p>
+  {% endfor %}
+  {% endif %}
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ page.last_updated | default: page.date | date_to_xmlschema }}","author":{"@type":"Organization","name":{{ site.title | jsonify }}},"mainEntityOfPage":{{ page.url | absolute_url | jsonify }}}
+</script>
+{% if page.faq %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for f in page.faq %}{"@type":"Question","name":{{ f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>
+{% endif %}

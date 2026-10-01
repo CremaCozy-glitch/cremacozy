@@ -8,7 +8,7 @@ a[rel~=sponsored]{color:var(--aff)}.card a[rel~=sponsored]{color:var(--cta-h)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 .skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
 .site-header{background:var(--brand);border-bottom:4px solid var(--accent)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:700 1.6rem "Playfair Display",Georgia,serif}
 .brand img{width:36px;height:36px;border-radius:8px}
 nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;padding:0}
@@ -60,3 +60,12 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 .chip:hover{border-color:var(--accent);background:#fff}
 .dot{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-size:15px;line-height:1}
 .d1{background:#E8D2BC}.d2{background:#CFE6E1}.d3{background:#CFE0F5}.d4{background:#F8D9BF}.d5{background:#E2D8F1}.d6{background:#F5E7B5}
+.site-footer a{display:inline-block;padding:5px 0}
+@media(max-width:600px){
+h1{font-size:1.75rem}
+.hero{padding:20px 18px;margin:16px 0}
+.post table{font-size:.85rem}
+.post th,.post td{padding:6px 8px}
+#cookie{flex-wrap:nowrap;gap:12px;padding:10px 14px;font-size:.82rem;line-height:1.4;justify-content:space-between}
+#cookie button{padding:8px 16px;flex:none}
+}

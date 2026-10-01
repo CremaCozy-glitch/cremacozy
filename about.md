@@ -6,22 +6,25 @@ permalink: /about/
 
 # About CremaCozy
 
-CremaCozy is an independent website about looking after your espresso machine. We focus on the Breville Barista Express and, secondarily, the Ninja Luxe Café.
+I have had a soft spot for coffee since I was a kid. I have also always been fascinated by machinery, so espresso machines were bound to catch me sooner or later. My girlfriend teases me about it lovingly and calls me her "machine baby", and honestly, it fits.
 
 ## Why this site exists
 
-Most general guides cover espresso machines in broad strokes. Owners of a specific model usually want specific answers: which light means what, how often to descale, which parts wear out. We write model-focused guides to fill that gap.
+I use the espresso machines I write about, mainly the Breville Barista Express and the Ninja Luxe Café. Over time I have learned which machine gives what kind of trouble and how each one behaves day to day. What I could not find was one place that explained those problems clearly, model by model, in plain steps. So I started CremaCozy.
 
-## How we research
+## How I write these guides
 
-We base our guides on the manufacturer's manuals and official support pages, on what owners report in public forums and communities, and on careful comparison of sources. We do not claim hands-on testing of a product or procedure unless an article says so explicitly.
+- I use my own experience with the machines as the starting point.
+- For anything involving cleaning, descaling or taking parts apart, I check the manufacturer's official instruction book and support pages, so you get steps that are safe for your machine.
+- I also read what other owners report in public communities, to catch problems I may not have run into myself.
+- Where an article is based mostly on a manual rather than my own use, I say so.
 
 ## How the site is funded
 
-CremaCozy participates in the Amazon Associates program. If you buy through our links we may earn a commission at no extra cost to you. This never changes the steps in our maintenance guides. See the [Affiliate Disclosure]({{ '/affiliate-disclosure/' | relative_url }}).
+CremaCozy participates in the Amazon Associates program. If you buy through a link on this site, I may earn a commission at no extra cost to you. This never changes the steps in a maintenance guide. See the [Affiliate Disclosure]({{ '/affiliate-disclosure/' | relative_url }}).
 
 ## Get in touch
 
-Found a mistake or have a suggestion? Visit the [Contact page]({{ '/contact/' | relative_url }}).
+Found a mistake, or have a machine problem you would like me to cover? Visit the [Contact page]({{ '/contact/' | relative_url }}).
 
 </div>

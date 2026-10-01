@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.url != "/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/favicon.svg' | relative_url }}" alt="">{{ site.title }}</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+      {% for item in site.nav %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+{{ content }}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>{% for l in site.footer_links %}<li><a href="{{ l.url | relative_url }}">{{ l.title }}</a></li>{% endfor %}</ul>
+    <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>Breville, Ninja and other brand names belong to their respective owners. This site is independent and is not endorsed by or affiliated with them.</p>
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+  </div>
+</footer>
+<div id="cookie" role="dialog" aria-label="Cookie notice">
+  <span>This site may use cookies for basic functionality and analytics. See our <a href="{{ '/cookie-policy/' | relative_url }}">Cookie Policy</a>.</span>
+  <button type="button" id="cookie-ok">OK</button>
+</div>
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  var c=document.getElementById('cookie');
+  try{if(!localStorage.getItem('cc_ok')){c.style.display='flex'}}catch(e){c.style.display='flex'}
+  document.getElementById('cookie-ok').addEventListener('click',function(){c.style.display='none';try{localStorage.setItem('cc_ok','1')}catch(e){}});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+title: CremaCozy
+description: Espresso machine maintenance, cleaning & accessories guides for Breville Barista Express and Ninja Luxe Café owners.
+url: "https://cremacozy-glitch.github.io"
+baseurl: "/cremacozy"
+permalink: /:title/
+# Put your public contact email below (inside the quotes). Used on the Contact and Privacy pages.
+email: ""
+amazon_tag: "crate137icg-20"
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - cremacozy-site.zip
+  - Espresso_Affiliate_Site_Tracker.xlsx
+defaults:
+  - scope: {path: "", type: pages}
+    values: {layout: default}
+nav:
+  - {title: Home, url: /}
+  - {title: Breville Barista Express, url: /breville-barista-express/}
+  - {title: Ninja Luxe Café, url: /ninja-luxe-cafe/}
+  - {title: Cleaning & Descaling, url: /cleaning-descaling/}
+  - {title: Troubleshooting, url: /troubleshooting/}
+  - {title: Accessories & Parts, url: /accessories-parts/}
+  - {title: Best Picks, url: /best-picks/}
+  - {title: About, url: /about/}
+footer_links:
+  - {title: About, url: /about/}
+  - {title: Contact, url: /contact/}
+  - {title: Privacy Policy, url: /privacy-policy/}
+  - {title: Affiliate Disclosure, url: /affiliate-disclosure/}
+  - {title: Terms & Disclaimer, url: /terms/}
+  - {title: Cookie Policy, url: /cookie-policy/}
+  - {title: Sitemap, url: /sitemap.xml}

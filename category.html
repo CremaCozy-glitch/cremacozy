@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p>{{ page.intro }}</p>
+{% assign posts = site.posts | where_exp: "p", "p.categories contains page.category" %}
+{% if posts.size > 0 %}
+<ul class="grid">
+  {% for p in posts %}
+  <li class="card"><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3><p>{{ p.description }}</p></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="note">Guides for this section are being written. Please check back soon.</p>
+{% endif %}

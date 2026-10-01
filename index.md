@@ -8,6 +8,11 @@ permalink: /
   <a class="btn" href="{{ '/breville-barista-express/' | relative_url }}">Start with Breville guides</a>
 </section>
 
+<section class="strip" aria-label="Machines and topics we cover">
+  <h2>Machines &amp; topics we cover</h2>
+  <div class="marquee"><div class="track"><a class="chip" href="{{ '/breville-barista-express/' | relative_url }}">Breville Barista Express</a><a class="chip" href="{{ '/ninja-luxe-cafe/' | relative_url }}">Ninja Luxe Café</a><a class="chip" href="{{ '/cleaning-descaling/' | relative_url }}">Cleaning &amp; Descaling</a><a class="chip" href="{{ '/troubleshooting/' | relative_url }}">Troubleshooting</a><a class="chip" href="{{ '/accessories-parts/' | relative_url }}">Accessories &amp; Parts</a><a class="chip" href="{{ '/best-picks/' | relative_url }}">Best Picks</a><span class="dup" aria-hidden="true"><a class="chip" href="{{ '/breville-barista-express/' | relative_url }}" tabindex="-1">Breville Barista Express</a><a class="chip" href="{{ '/ninja-luxe-cafe/' | relative_url }}" tabindex="-1">Ninja Luxe Café</a><a class="chip" href="{{ '/cleaning-descaling/' | relative_url }}" tabindex="-1">Cleaning &amp; Descaling</a><a class="chip" href="{{ '/troubleshooting/' | relative_url }}" tabindex="-1">Troubleshooting</a><a class="chip" href="{{ '/accessories-parts/' | relative_url }}" tabindex="-1">Accessories &amp; Parts</a><a class="chip" href="{{ '/best-picks/' | relative_url }}" tabindex="-1">Best Picks</a></span></div></div>
+</section>
+
 <h2>Browse by topic</h2>
 <ul class="grid">
   <li class="card"><h3><a href="{{ '/breville-barista-express/' | relative_url }}">Breville Barista Express</a></h3><p>Cleaning, descaling and filters.</p></li>

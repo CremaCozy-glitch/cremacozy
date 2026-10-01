@@ -80,7 +80,7 @@ Unplug the machine first. Breville's grinder cleaning routine, in short:
 3. Brush the upper burr, the lower burr and the grinder chute.
 4. Refit the upper burr, then lock the hopper back on.
 
-Follow the illustrated "Cleaning the Conical Burr Grinder" page in your manual for the exact orientation.
+Follow the illustrated "Cleaning the Conical Burr Grinder" page in <a class="ext" href="https://www.breville.com/content/dam/breville/us/assets/miscellaneous/instruction-manual/espresso/BES870-instruction-manual.pdf" target="_blank" rel="noopener">Breville's official BES870XL instruction book</a> for the exact orientation. For a wider look at keeping the machine clean, see our [Cleaning & Descaling]({{ '/cleaning-descaling/' | relative_url }}) guides.
 
 ## Step 5: Dry out any moisture
 
@@ -121,4 +121,4 @@ These are generic search links, so choose the item that suits you and check the 
 
 I use the Breville Barista Express myself, so I know how it behaves day to day. The troubleshooting steps themselves follow Breville's official instruction book for the BES870XL, because the manual is the safest source for anything involving the grinder burrs. Models and revisions can differ, so always check your own manual too.
 
-For related help, browse our [Troubleshooting]({{ '/troubleshooting/' | relative_url }}) and [Cleaning & Descaling]({{ '/cleaning-descaling/' | relative_url }}) sections, or the full [Breville Barista Express]({{ '/breville-barista-express/' | relative_url }}) hub.
+For more fixes like this, browse our [Troubleshooting]({{ '/troubleshooting/' | relative_url }}) and [Cleaning & Descaling]({{ '/cleaning-descaling/' | relative_url }}) sections, or the full [Breville Barista Express]({{ '/breville-barista-express/' | relative_url }}) hub.

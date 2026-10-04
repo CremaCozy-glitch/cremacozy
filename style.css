@@ -69,3 +69,35 @@ h1{font-size:1.75rem}
 #cookie{flex-wrap:nowrap;gap:12px;padding:10px 14px;font-size:.82rem;line-height:1.4;justify-content:space-between}
 #cookie button{padding:8px 16px;flex:none}
 }
+/* Responsive article images */
+.article-image {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.article-image figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+  text-align: center;
+}
+
+/* Prevent any image from overflowing on mobile */
+.post-content img,
+.page-content img,
+article img,
+main img,
+img {
+  max-width: 100%;
+  height: auto;
+}

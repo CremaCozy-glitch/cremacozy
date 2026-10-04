@@ -17,16 +17,18 @@ faq:
   - q: "My Barista Express stopped working in the middle of use. What now?"
     a: "The safety thermal cut-out may have activated because the pump or grinder overheated. Switch the machine off, unplug it and let it cool for about 30 to 60 minutes. If the problem continues, contact Breville Consumer Support."
 ---
-Is your **Breville Barista Express grinder not working**? Most grinder problems on this machine come down to a handful of causes that Breville lists in its own instruction book: an unlocked hopper, an empty hopper, a blocked chute, moisture, or the wrong grind settings. This guide walks through them in the order that is quickest to check.
+
+It's early, you've pulled the portafilter out, and the grinder just sits there. No noise, no grounds, nothing. A morning can go sideways fast over that.
+
+The good news is that when a **Breville Barista Express grinder is not working**, the manual points to a short list of causes, and most are quick to check. The list: an unlocked hopper, an empty hopper, a blocked chute, moisture, or the wrong grind settings. I'll take you through them in the order that's quickest to check.
 
 <div class="callout" markdown="1">
-**Short answer:** Switch the machine off and unplug it. Check that the hopper has beans and is locked in place, make sure the filter basket is dry, then look for a blockage in the grinder chamber and chute. Work through the steps below if that does not fix it.
+**Quick answer:** Switch the machine off and unplug it. Then check three things. The hopper should have beans in it and be locked on, the filter basket should be completely dry, and nothing should be blocking the grinder chamber or chute. If it still won't run, the steps below cover the rest.
 </div>
 
 <div class="toc" markdown="1">
 ## In this guide
 {:.no_toc}
-
 * TOC
 {:toc}
 </div>
@@ -37,6 +39,13 @@ Is your **Breville Barista Express grinder not working**? Most grinder problems 
 - The grinder burrs are extremely sharp, so handle them with care.
 - Never run the grinder without the hopper lid in position, and keep fingers and hair away from the hopper.
 
+{% assign img = site.static_files | where: "path", "/photo-machine.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-machine.jpg' | relative_url }}" alt="Breville Barista Express espresso machine with the bean hopper on top" loading="lazy" style="max-width:420px;margin-left:auto;margin-right:auto">
+  <figcaption style="text-align:center">The grinder sits under the bean hopper on top of the machine.</figcaption>
+</figure>
+{% endif %}
+
 ## Find your symptom
 
 This table summarizes the grinder entries in the troubleshooting section of the Breville Barista Express (BES870XL) instruction book.
@@ -46,16 +55,37 @@ This table summarizes the grinder entries in the troubleshooting section of the 
 | What you notice | Likely cause (per Breville) | What to do |
 |---|---|---|
 | FILTER SIZE lights are flashing | Hopper not attached correctly | Remove the hopper, check for debris, re-lock it |
-| No ground coffee comes out | No beans, a blocked chamber or chute, or moisture inside | Fill the hopper, clean and clear the chamber and chute, dry everything |
+| No ground coffee comes out | No beans, a blocked chamber or chute, or moisture inside | Fill the hopper. For a blockage or moisture, Breville points to advanced cleaning (Step 6). Make sure everything is dry. |
 | Grinder is making a loud noise | Blockage or foreign object | Remove the hopper, check for debris, clean the chamber and chute |
 | Too much or too little coffee in the basket | Grind amount does not suit your grind size | Adjust the GRIND AMOUNT dial |
 | Machine stops working mid-use | Thermal cut-out from overheating | Switch off, unplug, cool for 30 to 60 minutes |
 
 </div>
 
+{% assign img = site.static_files | where: "path", "/photo-panel.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-panel.jpg' | relative_url }}" alt="Barista Express control panel showing the GRIND AMOUNT dial, FILTER SIZE lights, and PROGRAM button" loading="lazy">
+  <figcaption>The control panel: check the grind amount dial, the FILTER SIZE lights, and the PROGRAM button.</figcaption>
+</figure>
+{% endif %}
+
 ## Step 1: Check the hopper
 
 Make sure there are beans in the hopper. Then remove the hopper and lock it back on. Breville's manual says that if the hopper is not locked correctly, the FILTER SIZE lights flash. While it is off, look for stray beans or debris around the base.
+
+{% assign img = site.static_files | where: "path", "/photo-hopper.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-hopper.jpg' | relative_url }}" alt="Bean hopper removed from the machine" loading="lazy" style="max-width:300px;margin-left:auto;margin-right:auto">
+  <figcaption style="text-align:center">The bean hopper. Take it off, check the area around the base, then lock it back on.</figcaption>
+</figure>
+{% endif %}
+
+{% assign img = site.static_files | where: "path", "/photo-grind-dial.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-grind-dial.jpg' | relative_url }}" alt="Close-up of the GRIND SIZE selector" loading="lazy" style="max-width:300px;margin-left:auto;margin-right:auto">
+  <figcaption style="text-align:center">The GRIND SIZE selector.</figcaption>
+</figure>
+{% endif %}
 
 ## Step 2: Check how you start the grinder
 
@@ -71,6 +101,13 @@ If the grinder works but the dose is wrong, the settings are usually the reason.
 
 If shot volumes also seem off, the manual suggests resetting to the default settings first by holding the PROGRAM button until the machine beeps three times.
 
+{% assign img = site.static_files | where: "path", "/diagram-grind-settings.svg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/diagram-grind-settings.svg' | relative_url }}" alt="Illustration showing where to start with GRIND SIZE and GRIND AMOUNT settings" loading="lazy">
+  <figcaption>Illustration: where to start with GRIND SIZE and GRIND AMOUNT.</figcaption>
+</figure>
+{% endif %}
+
 ## Step 4: Clear a blockage
 
 Unplug the machine first. Breville's grinder cleaning routine, in short:
@@ -80,7 +117,14 @@ Unplug the machine first. Breville's grinder cleaning routine, in short:
 3. Brush the upper burr, the lower burr and the grinder chute.
 4. Refit the upper burr, then lock the hopper back on.
 
-Follow the illustrated "Cleaning the Conical Burr Grinder" page in <a class="ext" href="https://www.breville.com/content/dam/breville/us/assets/miscellaneous/instruction-manual/espresso/BES870-instruction-manual.pdf" target="_blank" rel="noopener">Breville's official BES870XL instruction book</a> for the exact orientation. For a wider look at keeping the machine clean, see our [Cleaning & Descaling]({{ '/cleaning-descaling/' | relative_url }}) guides.
+Follow the illustrated "Cleaning the Conical Burr Grinder" page in <a class="ext" href="https://assets.breville.com/BES870/BES870_USCM_IB_O21.pdf" target="_blank" rel="noopener">Breville's official BES870XL instruction book</a> for the exact orientation. For a wider look at keeping the machine clean, see our [Cleaning & Descaling]({{ '/cleaning-descaling/' | relative_url }}) guides.
+
+{% assign img = site.static_files | where: "path", "/photo-burrs.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-burrs.jpg' | relative_url }}" alt="Looking down into the grinder chamber with the burr assembly exposed; ALIGN and LOCK markings visible" loading="lazy" style="max-width:460px;margin-left:auto;margin-right:auto">
+  <figcaption style="text-align:center">Be careful here. The burrs are extremely sharp.</figcaption>
+</figure>
+{% endif %}
 
 ## Step 5: Dry out any moisture
 
@@ -88,7 +132,7 @@ Breville lists water or moisture in the grinder chamber and chute as a cause of 
 
 ## Step 6: Advanced cleaning (only if still blocked)
 
-The manual says its advanced cleaning is only needed if there is a blockage between the burrs and the grinder outlet. It involves setting GRIND SIZE to the finest setting, loosening a nut with a 10mm socket, removing the upper and lower burrs, and clearing the exit chute with a brush or a pipe cleaner. When you finish, set GRIND SIZE back to 5 and lock the hopper. Use the illustrated steps in your manual, because the order of the washers and the grind fan matters.
+The manual says advanced cleaning is only needed if there is a blockage between the burrs and the grinder outlet. It involves setting GRIND SIZE to the finest setting, loosening a nut with a 10mm socket, removing the upper and lower burrs, and clearing the exit chute with a brush or a pipe cleaner. When you finish, set GRIND SIZE back to 5 and lock the hopper.
 
 ## Grinder not working after cleaning?
 
@@ -101,21 +145,30 @@ Re-check what you just touched:
 
 ## Machine stopped mid-use
 
-Breville says the safety thermal cut-out may have activated because the pump or grinder overheated. Press POWER to switch off, unplug, and let it cool for about 30 to 60 minutes.
+Breville says the safety thermal cut-out may have activated because the pump or grinder overheated. Press POWER to switch off, unplug it, and let it cool for about 30 to 60 minutes.
 
 ## When to contact Breville
 
-If the grinder still does not work after these steps, or if the power cord, plug or machine is damaged, stop using the machine. Breville's manual says to call Breville Consumer Support for any maintenance other than cleaning. You can reach them through [breville.com](https://www.breville.com/).
+If the grinder still does not work after these steps, or if the power cord, plug or machine is damaged, stop using the machine. Breville's manual says to call Breville Consumer Support for any maintenance other than cleaning.
 
 ## Supplies that help with grinder cleaning
 
 <div class="supplies" markdown="1">
-These are generic search links, so choose the item that suits you and check the current price on Amazon.
+These are the tools I'd reach for. Check the current price and details on Amazon before you buy.
 
-- A 10mm socket, needed for the advanced cleaning step: <a href="https://www.amazon.com/s?k=10mm+socket&amp;tag={{ site.amazon_tag }}" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
-- Long-nose pliers, used to remove the grind fan and washers: <a href="https://www.amazon.com/s?k=long+nose+pliers&amp;tag={{ site.amazon_tag }}" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
-- A small cleaning brush for burrs and the chute: <a href="https://www.amazon.com/s?k=small+coffee+grinder+cleaning+brush&amp;tag={{ site.amazon_tag }}" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
+- A 10mm socket, needed for the advanced cleaning step: <a href="https://link.amazon/B0fsmvyJO" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
+- Long-nose pliers, used to remove the grind fan and washers: <a href="https://link.amazon/B06bUs3Os" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
+- A few pipe cleaners, which the manual names for unblocking the grinder exit chute (the machine already comes with a cleaning brush): <a href="https://link.amazon/B00LktRSV" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
 </div>
+
+{% assign img = site.static_files | where: "path", "/photo-tools.jpg" %}{% if img.size > 0 %}
+<figure class="photo">
+  <img src="{{ '/photo-tools.jpg' | relative_url }}" alt="Tools used for advanced grinder cleaning: 10mm socket, long-nose pliers and small cleaning tools" loading="lazy">
+  <figcaption>The tools for the advanced grinder clean.</figcaption>
+</figure>
+{% endif %}
+
+Still deciding on the machine itself? You can <a href="https://link.amazon/B0iIxo9gj" rel="sponsored nofollow noopener" target="_blank">check the Breville Barista Express (BES870XL) on Amazon</a>.
 
 ## How I put this guide together
 

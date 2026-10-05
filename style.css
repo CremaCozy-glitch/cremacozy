@@ -53,9 +53,8 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 .strip h2{font-size:1.1rem;text-align:center;margin:0 0 12px}
 
 .marquee{
-overflow:hidden;
+  overflow:hidden;
   width:100%;
-  padding-left:14px;
   box-sizing:border-box;
 }
 
@@ -63,10 +62,8 @@ overflow:hidden;
  display:flex;
   gap:14px;
   width:max-content;
-  padding-left:0;
   animation:scroll 32s linear infinite;
   will-change:transform;
-
 }
 
 .marquee:hover .track,
@@ -77,8 +74,8 @@ overflow:hidden;
 .dup{display:flex;gap:14px}
 
 @keyframes scroll{
-from{transform:translateX(14px)}
-to{transform:translateX(calc(-50% + 14px))}
+from{transform:translateX(0)}
+  to{transform:translateX(calc(-50% - 7px))}
 }
 
 @media (prefers-reduced-motion:reduce){

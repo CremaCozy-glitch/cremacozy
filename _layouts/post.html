@@ -4,7 +4,6 @@ layout: default
 <article class="content post">
   <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> &rsaquo; <a href="{{ page.section_url | relative_url }}">{{ page.section_title }}</a></p>
   <h1>{{ page.title }}</h1>
-  <p class="meta">Last updated: {{ page.last_updated | default: page.date | date: "%B %-d, %Y" }}</p>
   <p class="disclosure">Disclosure: As an Amazon Associate I earn from qualifying purchases. Some links in this article are affiliate links. <a href="{{ '/affiliate-disclosure/' | relative_url }}">Read the full disclosure</a>.</p>
   {{ content }}
   {% if page.faq %}

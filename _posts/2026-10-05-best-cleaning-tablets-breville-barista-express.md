@@ -44,6 +44,7 @@ I use a Breville Barista Express myself, and this guide follows the steps and ap
 ## My top picks
 
 ### 1) Best for most people: Breville BEC250 Espresso Machine Cleaning Tablets, 8 Pack
+![Breville Espresso Cleaner](/breville-espresso-cleaner.png)
 
 If you want the brand-matched option, this is the one I'd choose first. These are Breville's own cleaning tablets, made for Breville espresso machines, so you don't have to wonder whether the cleaning cycle and tablet instructions line up.
 
@@ -55,6 +56,7 @@ If you want the brand-matched option, this is the one I'd choose first. These ar
 <a href="https://link.amazon/B04UtcYl6" rel="sponsored nofollow noopener" target="_blank">Check on Amazon</a>
 
 ### 2) Best value: 40 Espresso Cleaning Tablets and 6 Water Filters for Breville
+![Possiave Cleaning Kit](/possiave-cleaning-kit.png)
 
 This option makes sense if you want to buy once and stock up. You get a larger supply of tablets plus six water filters, which is handy if you replace your filter on schedule.
 
@@ -79,7 +81,7 @@ Breville uses an indicator to tell you what it needs:
 On some Barista Express versions, the label is written as CLEAN ME or shown as a combined CLEAN/DESCALE indicator. Follow the flashing vs solid behavior, not just the text.
 
 ## How to run the cleaning cycle
-
+![Espresso Cleaning Steps](/espresso-cleaning-steps.png)
 These steps follow the instruction-book approach for the Barista Express. Still, check your own manual because versions can differ.
 
 1. Put the **1 CUP filter basket** into the portafilter.

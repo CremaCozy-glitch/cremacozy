@@ -59,9 +59,10 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 }
 
 .track{
- display:flex;
+  display:flex;
   gap:14px;
   width:max-content;
+  padding-left:0;
   animation:scroll 32s linear infinite;
   will-change:transform;
 }
@@ -74,8 +75,8 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 .dup{display:flex;gap:14px}
 
 @keyframes scroll{
-from{transform:translateX(0)}
-  to{transform:translateX(calc(-50% - 7px))}
+from{transform:translateX(14px)}
+  to{transform:translateX(calc(-50% + 14px))}
 }
 
 @media (prefers-reduced-motion:reduce){

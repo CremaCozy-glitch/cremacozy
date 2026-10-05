@@ -1,7 +1,7 @@
 title: CremaCozy
 description: Espresso machine maintenance, cleaning & accessories guides for Breville Barista Express and Ninja Luxe Café owners.
 url: "https://cremacozy-glitch.github.io"
-baseurl: "/cremacozy"
+baseurl: ""
 permalink: /:title/
 # Put your public contact email below (inside the quotes). Used on the Contact and Privacy pages.
 email: ""

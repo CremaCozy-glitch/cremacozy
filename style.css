@@ -53,10 +53,10 @@ a.ext::after{content:" \2197";font-size:.85em;display:inline-block;text-decorati
 .strip h2{font-size:1.1rem;text-align:center;margin:0 0 12px}
 
 .marquee{
-  overflow:hidden;
-  position:relative;
-  -webkit-mask-image:none;
-  mask-image:none;
+overflow:hidden;
+  width:100%;
+  padding-left:14px;
+  box-sizing:border-box;
 }
 
 .track{

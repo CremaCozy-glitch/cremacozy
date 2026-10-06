@@ -159,10 +159,11 @@ img {
 
 .coffee-scene {
   position: relative;
-  background: #e9e2d8;
-  border-radius: 20px;
+  background: linear-gradient(180deg, #e8e1d8 0%, #ddd6cc 100%);
+  border-radius: 22px;
   overflow: hidden;
   min-height: 430px;
+  box-shadow: 0 12px 30px rgba(60, 40, 20, 0.08);
 }
 
 .counter {
@@ -180,7 +181,7 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 95px;
+  gap: 100px;
   padding: 24px 30px 72px;
   box-sizing: border-box;
 }
@@ -216,7 +217,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   top: 14px;
-  width: 56px;
+  width: 58px;
   height: 18px;
   background: radial-gradient(circle at 50% 40%, #1d1d1d 0%, #050505 100%);
   border-radius: 0 0 14px 14px;
@@ -258,6 +259,7 @@ img {
   height: 68px;
   background: linear-gradient(180deg, #171717 0%, #060606 100%);
   border-radius: 14px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
 }
 
 .control-panel {
@@ -335,12 +337,24 @@ img {
   left: 0;
   width: 360px;
   height: 250px;
-  background: linear-gradient(90deg, #c8c8c8 0%, #efefef 20%, #dcdcdc 50%, #f4f4f4 78%, #c6c6c6 100%);
+  background: linear-gradient(90deg, #c9c9c9 0%, #f1f1f1 24%, #dddddd 50%, #f7f7f7 76%, #c4c4c4 100%);
   border-radius: 16px 16px 18px 18px;
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.6),
     inset 12px 0 16px rgba(255,255,255,0.28),
-    inset -12px 0 16px rgba(0,0,0,0.07);
+    inset -12px 0 16px rgba(0,0,0,0.07),
+    0 10px 18px rgba(0,0,0,0.06);
+}
+
+.body-shine {
+  position: absolute;
+  top: 0;
+  left: 28px;
+  width: 54px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0));
+  border-radius: 20px;
+  pointer-events: none;
 }
 
 .machine-body::after {
@@ -376,6 +390,7 @@ img {
   background: linear-gradient(180deg, #2a2a2a 0%, #101010 100%);
   border-radius: 8px 8px 14px 14px;
   z-index: 2;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.06);
 }
 
 .spout {
@@ -422,8 +437,8 @@ img {
 }
 
 .moving-cups {
-  animation: moveCupsToLogo 1.6s ease forwards;
-  animation-delay: 5.4s;
+  animation: moveCupsToFinal 1.5s ease forwards;
+  animation-delay: 5.3s;
 }
 
 .cup {
@@ -433,7 +448,7 @@ img {
   border: 2px solid rgba(255,255,255,0.82);
   border-top: 0;
   border-radius: 0 0 14px 14px;
-  background: rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.14);
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.12);
 }
@@ -456,9 +471,22 @@ img {
   right: 0;
   bottom: 0;
   height: 0;
-  background: linear-gradient(180deg, #c07a43 0%, #8f4f24 60%, #6d3815 100%);
-  animation: cupFill 2.2s ease forwards;
+  background: linear-gradient(180deg, #b7743e 0%, #8d4e24 62%, #643313 100%);
+  animation: cupFill 2.1s ease forwards;
   animation-delay: 2.8s;
+}
+
+.mini-crema {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 20px;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #d9a36e 0%, #b7743e 100%);
+  opacity: 0;
+  animation: cremaAppear 0.6s ease forwards;
+  animation-delay: 4.6s;
 }
 
 .coffee-stream {
@@ -470,8 +498,8 @@ img {
   border-radius: 4px;
   z-index: 5;
   opacity: 0;
-  animation: pourCoffee 2s ease forwards, hideCoffeeStream 0.2s linear forwards;
-  animation-delay: 2.6s, 4.8s;
+  animation: pourCoffee 2s ease forwards, hideCoffeeStream 0.15s linear forwards;
+  animation-delay: 2.6s, 4.65s;
 }
 
 .stream-left { left: 163px; }
@@ -527,72 +555,121 @@ img {
 .bean2 { left: 180px; animation-delay: 0.7s; }
 .bean3 { left: 200px; animation-delay: 1.2s; }
 
-.logo-coffee-wrap {
+.final-cup-area {
   position: relative;
-  width: 120px;
-  height: 150px;
-  margin-bottom: 0;
+  width: 170px;
+  height: 155px;
+  margin-bottom: 4px;
 }
 
-.logo-cup {
+.final-cup-shadow {
   position: absolute;
-  bottom: 0;
-  left: 18px;
-  width: 64px;
-  height: 86px;
-  border: 4px solid rgba(255,255,255,0.92);
-  border-top: 0;
-  border-radius: 0 0 22px 22px;
-  background: rgba(255,255,255,0.12);
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  bottom: 4px;
+  left: 24px;
+  width: 100px;
+  height: 18px;
+  background: rgba(0,0,0,0.12);
+  border-radius: 50%;
+  filter: blur(5px);
 }
 
-.logo-cup::after {
+.final-pour {
+  position: absolute;
+  left: 73px;
+  top: 6px;
+  width: 5px;
+  height: 0;
+  opacity: 0;
+  background: linear-gradient(180deg, #9e6433 0%, #653514 100%);
+  border-radius: 4px;
+  animation: finalPour 1.15s ease forwards, hideFinalPour 0.12s linear forwards;
+  animation-delay: 6.75s, 7.88s;
+}
+
+.final-cup {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  width: 94px;
+  height: 64px;
+  background: linear-gradient(180deg, #fffdfa 0%, #f1ebe4 100%);
+  border-radius: 0 0 30px 30px / 0 0 24px 24px;
+  box-shadow:
+    inset 0 2px 2px rgba(255,255,255,0.85),
+    0 6px 14px rgba(0,0,0,0.08);
+  border: 3px solid #f7f2eb;
+  border-top: 8px solid #ffffff;
+}
+
+.final-cup::before {
   content: "";
   position: absolute;
-  right: -16px;
-  top: 18px;
-  width: 16px;
-  height: 24px;
-  border: 4px solid rgba(255,255,255,0.92);
-  border-left: 0;
-  border-radius: 0 14px 14px 0;
+  top: -10px;
+  left: -3px;
+  width: 94px;
+  height: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #ece4db 100%);
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);
 }
 
-.logo-fill {
+.final-cup-inner {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 8px;
+  bottom: 6px;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+}
+
+.final-handle {
+  position: absolute;
+  left: 114px;
+  bottom: 42px;
+  width: 24px;
+  height: 30px;
+  border: 5px solid #f6f1ea;
+  border-left: 0;
+  border-radius: 0 18px 18px 0;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.04);
+}
+
+.final-coffee {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 0;
-  background: linear-gradient(180deg, #d0a173 0%, #b57945 46%, #945624 100%);
-  animation: logoCupFill 1.4s ease forwards;
-  animation-delay: 7s;
+  background: linear-gradient(180deg, #d1a06f 0%, #b57740 42%, #915320 100%);
+  animation: finalCupFill 1.3s ease forwards;
+  animation-delay: 6.95s;
 }
 
-.logo-foam {
+.final-foam {
   position: absolute;
   left: 4px;
   right: 4px;
-  bottom: 48px;
-  height: 22px;
-  background: linear-gradient(180deg, #efe4d6 0%, #e1d1bf 100%);
-  border-radius: 20px 20px 10px 10px;
-  opacity: 0.95;
+  bottom: 34px;
+  height: 14px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #efe3d5 0%, #dcc8b1 100%);
+  opacity: 0;
+  animation: finalFoamShow 0.5s ease forwards;
+  animation-delay: 7.9s;
 }
 
-.logo-pour {
+.final-saucer {
   position: absolute;
-  top: 14px;
-  left: 42px;
-  width: 5px;
-  height: 0;
-  opacity: 0;
-  background: linear-gradient(180deg, #9c6232 0%, #693717 100%);
-  border-radius: 4px;
-  animation: logoPour 1.2s ease forwards;
-  animation-delay: 6.8s;
+  left: 12px;
+  bottom: 6px;
+  width: 126px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f7f1ea 0%, #e3d8cc 100%);
+  box-shadow:
+    inset 0 2px 2px rgba(255,255,255,0.7),
+    0 4px 8px rgba(0,0,0,0.05);
 }
 
 @keyframes beanDrop {
@@ -630,14 +707,25 @@ img {
 
 @keyframes hideCoffeeStream {
   to {
-    opacity: 0;
     height: 0;
+    opacity: 0;
   }
 }
 
 @keyframes cupFill {
   0% { height: 0; }
   100% { height: 54%; }
+}
+
+@keyframes cremaAppear {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes steamRise {
@@ -686,43 +774,61 @@ img {
   }
 }
 
-@keyframes moveCupsToLogo {
+@keyframes moveCupsToFinal {
   0% {
     transform: translateX(0);
     opacity: 1;
   }
-  70% {
-    transform: translateX(170px);
+  75% {
+    transform: translateX(168px);
     opacity: 1;
   }
   100% {
-    transform: translateX(190px);
+    transform: translateX(188px);
     opacity: 0;
   }
 }
 
-@keyframes logoPour {
+@keyframes finalPour {
   0% {
     height: 0;
     opacity: 0;
   }
-  15% {
+  12% {
     opacity: 1;
   }
   100% {
-    height: 64px;
+    height: 58px;
     opacity: 1;
   }
 }
 
-@keyframes logoCupFill {
+@keyframes hideFinalPour {
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes finalCupFill {
   0% { height: 0; }
-  100% { height: 58%; }
+  100% { height: 56%; }
+}
+
+@keyframes finalFoamShow {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 900px) {
   .machine-stage {
-    gap: 38px;
+    gap: 42px;
     padding: 20px 20px 72px;
   }
 
@@ -731,7 +837,7 @@ img {
     transform-origin: bottom center;
   }
 
-  .logo-coffee-wrap {
+  .final-cup-area {
     transform: scale(0.9);
     transform-origin: bottom center;
   }
@@ -745,7 +851,7 @@ img {
 
   .machine-stage {
     height: 340px;
-    gap: 6px;
+    gap: 4px;
     padding: 0 6px 56px;
     align-items: flex-end;
   }
@@ -758,10 +864,11 @@ img {
     margin-left: -36px;
   }
 
-  .logo-coffee-wrap {
+  .final-cup-area {
     transform: scale(0.72);
     transform-origin: bottom center;
-    margin-left: -40px;
+    margin-left: -44px;
+    margin-bottom: 6px;
   }
 
   .counter {
@@ -789,9 +896,10 @@ img {
     margin-left: -62px;
   }
 
-  .logo-coffee-wrap {
+  .final-cup-area {
     transform: scale(0.56);
-    margin-left: -72px;
+    margin-left: -78px;
+    margin-bottom: 8px;
   }
 
   .counter {

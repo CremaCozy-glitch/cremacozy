@@ -12,8 +12,8 @@ You ran the cleaning cycle, waited for it to finish, and the Clean Me light is s
 Most of the time, the cycle did not complete properly, or the cleaning disc or tablet was missing. Check those first, then work down the list below.
 
 <figure>
-  <img src="{{ '/breville-clean-me-light-on.jpg' | relative_url }}" alt="Breville Barista Express control panel with the Clean Me indicator light on" loading="lazy" width="736" height="1308">
-  <figcaption>If this light stays on after a cleaning cycle, the cycle usually did not complete properly.</figcaption>
+  <img src="{{ '/breville-clean-me-light-on.jpg' | relative_url }}" alt="Breville Barista Express control panel with the Clean Me indicator light on" loading="lazy" width="736" height="1308" style="max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;">
+  <figcaption>If the Clean Me light stays on after a cleaning cycle, the cycle usually did not complete properly.</figcaption>
 </figure>
 
 ## The three things to check first
@@ -40,7 +40,7 @@ Here is the correct way to do it:
 2. Put the **1 CUP filter basket** in the portafilter, set the **cleaning disc** in it, and place **one cleaning tablet** on top.
 
 <figure>
-  <img src="{{ '/breville-cleaning-disc-tablet-setup.jpg' | relative_url }}" alt="Breville Barista Express portafilter with cleaning disc and cleaning tablet set up for the cleaning cycle" loading="lazy" width="1056" height="792">
+  <img src="{{ '/breville-cleaning-disc-tablet-setup.jpg' | relative_url }}" alt="Breville Barista Express portafilter with cleaning disc and cleaning tablet set up for the cleaning cycle" loading="lazy" width="1056" height="792" style="max-width: 650px; width: 100%; height: auto; display: block; margin: 0 auto;">
   <figcaption>Correct cleaning-cycle setup: cleaning disc in the basket, tablet on top.</figcaption>
 </figure>
 
@@ -51,8 +51,8 @@ Here is the correct way to do it:
 5. Press and hold **1 CUP**, **2 CUP**, and **POWER** together. Keep holding for about 10 seconds until the cleaning cycle starts.
 
 <figure>
-  <img src="{{ '/breville-clean-cycle-button-combo.jpg' | relative_url }}" alt="Breville Barista Express control panel showing the POWER, 1 CUP and 2 CUP buttons pressed together to start the cleaning cycle" loading="lazy" width="1024" height="768">
-  <figcaption>To start the cleaning cycle, press and hold POWER, 1 CUP, and 2 CUP together for about 10 seconds.</figcaption>
+  <img src="{{ '/breville-clean-cycle-button-combo.jpg' | relative_url }}" alt="Breville Barista Express cleaning cycle button combination: POWER + 1 CUP + 2 CUP" loading="lazy" width="1056" height="792" style="max-width: 650px; width: 100%; height: auto; display: block; margin: 0 auto;">
+  <figcaption>Hold POWER + 1 CUP + 2 CUP to enter cleaning mode.</figcaption>
 </figure>
 
 6. Leave the machine alone until the cycle fully finishes.

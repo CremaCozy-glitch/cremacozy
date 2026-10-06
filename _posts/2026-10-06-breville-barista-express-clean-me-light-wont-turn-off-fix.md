@@ -1,5 +1,6 @@
 ---
 title: "Breville Barista Express Clean Me Light Won't Turn Off: Fix"
+date: 2025-10-06
 layout: post
 description: "If your Breville Barista Express Clean Me light stays on after a cleaning cycle, here is how to reset it properly and what to check next."
 tags: [breville barista express, clean me light, espresso machine cleaning, coffee maker troubleshooting]

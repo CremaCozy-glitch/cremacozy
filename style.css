@@ -162,7 +162,7 @@ img {
   background: #e9e2d8;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 430px;
 }
 
 .counter {
@@ -176,11 +176,11 @@ img {
 
 .machine-stage {
   position: relative;
-  height: 420px;
+  height: 430px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 54px;
+  gap: 95px;
   padding: 24px 30px 72px;
   box-sizing: border-box;
 }
@@ -188,12 +188,44 @@ img {
 .machine-wrap {
   position: relative;
   width: 360px;
-  height: 340px;
+  height: 355px;
+}
+
+.bean-hopper {
+  position: absolute;
+  top: -4px;
+  left: 104px;
+  width: 152px;
+  height: 44px;
+  z-index: 8;
+}
+
+.hopper-lid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 16px;
+  background: linear-gradient(180deg, #1f1f1f 0%, #090909 100%);
+  border-radius: 14px 14px 8px 8px;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.08);
+}
+
+.hopper-hole {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+  width: 56px;
+  height: 18px;
+  background: radial-gradient(circle at 50% 40%, #1d1d1d 0%, #050505 100%);
+  border-radius: 0 0 14px 14px;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.08);
 }
 
 .machine-top {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 20px;
   width: 320px;
   height: 52px;
@@ -220,7 +252,7 @@ img {
 
 .machine-head {
   position: absolute;
-  top: 32px;
+  top: 42px;
   left: 18px;
   width: 324px;
   height: 68px;
@@ -299,7 +331,7 @@ img {
 
 .machine-body {
   position: absolute;
-  top: 86px;
+  top: 96px;
   left: 0;
   width: 360px;
   height: 250px;
@@ -386,7 +418,12 @@ img {
   display: flex;
   justify-content: center;
   gap: 18px;
-  z-index: 3;
+  z-index: 4;
+}
+
+.moving-cups {
+  animation: moveCupsToLogo 1.6s ease forwards;
+  animation-delay: 5.4s;
 }
 
 .cup {
@@ -420,7 +457,7 @@ img {
   bottom: 0;
   height: 0;
   background: linear-gradient(180deg, #c07a43 0%, #8f4f24 60%, #6d3815 100%);
-  animation: cupFill 2.4s ease forwards;
+  animation: cupFill 2.2s ease forwards;
   animation-delay: 2.8s;
 }
 
@@ -431,10 +468,10 @@ img {
   height: 0;
   background: linear-gradient(180deg, #8a4d25 0%, #5b2e14 100%);
   border-radius: 4px;
-  z-index: 4;
+  z-index: 5;
   opacity: 0;
-  animation: pourCoffee 2.2s ease forwards;
-  animation-delay: 2.6s;
+  animation: pourCoffee 2s ease forwards, hideCoffeeStream 0.2s linear forwards;
+  animation-delay: 2.6s, 4.8s;
 }
 
 .stream-left { left: 163px; }
@@ -452,36 +489,26 @@ img {
   opacity: 0;
   z-index: 5;
   animation: steamRise 2.4s ease-in-out infinite;
-  animation-delay: 4.4s;
+  animation-delay: 4.9s;
 }
 
-.steam-1 {
-  left: 146px;
-  top: 170px;
-}
-
-.steam-2 {
-  left: 172px;
-  top: 160px;
-  animation-delay: 4.8s;
-}
-
-.steam-3 {
-  left: 198px;
-  top: 170px;
-  animation-delay: 5.1s;
-}
+.steam-1 { left: 146px; top: 170px; }
+.steam-2 { left: 172px; top: 160px; animation-delay: 5.2s; }
+.steam-3 { left: 198px; top: 170px; animation-delay: 5.5s; }
 
 .bean {
   position: absolute;
   top: 0;
-  width: 10px;
-  height: 15px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #6d4122 0%, #432410 100%);
+  width: 14px;
+  height: 20px;
+  border-radius: 48% 52% 50% 50%;
+  background: radial-gradient(circle at 35% 30%, #8d5a31 0%, #6b3e1d 38%, #4c2a12 78%, #2e180a 100%);
   opacity: 0;
-  z-index: 5;
-  animation: beanDrop 0.9s ease forwards;
+  z-index: 9;
+  animation: beanDrop 1s ease forwards;
+  box-shadow:
+    inset -2px -2px 3px rgba(0,0,0,0.25),
+    inset 1px 1px 2px rgba(255,255,255,0.08);
 }
 
 .bean::after {
@@ -490,70 +517,100 @@ img {
   top: 2px;
   bottom: 2px;
   left: 50%;
-  width: 1px;
+  width: 2px;
   transform: translateX(-50%);
-  background: rgba(255,255,255,0.18);
+  border-radius: 2px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(0,0,0,0.22));
 }
 
-.bean1 { left: 168px; animation-delay: 0.2s; }
-.bean2 { left: 182px; animation-delay: 0.6s; }
-.bean3 { left: 196px; animation-delay: 1s; }
+.bean1 { left: 160px; animation-delay: 0.2s; }
+.bean2 { left: 180px; animation-delay: 0.7s; }
+.bean3 { left: 200px; animation-delay: 1.2s; }
 
-.milk-glass {
+.logo-coffee-wrap {
   position: relative;
-  width: 68px;
-  height: 92px;
+  width: 120px;
+  height: 150px;
   margin-bottom: 0;
-  border: 3px solid rgba(255,255,255,0.75);
+}
+
+.logo-cup {
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  width: 64px;
+  height: 86px;
+  border: 4px solid rgba(255,255,255,0.92);
   border-top: 0;
   border-radius: 0 0 22px 22px;
   background: rgba(255,255,255,0.12);
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.milk-glass::before {
+.logo-cup::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 6px;
-  right: 6px;
-  height: 34px;
-  border-radius: 20px 20px 10px 10px;
-  background: rgba(255,255,255,0.2);
+  right: -16px;
+  top: 18px;
+  width: 16px;
+  height: 24px;
+  border: 4px solid rgba(255,255,255,0.92);
+  border-left: 0;
+  border-radius: 0 14px 14px 0;
 }
 
-.milk-fill {
+.logo-fill {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 54%;
-  background: linear-gradient(180deg, #c88f5c 0%, #b06e3b 55%, #9a5c2e 100%);
+  height: 0;
+  background: linear-gradient(180deg, #d0a173 0%, #b57945 46%, #945624 100%);
+  animation: logoCupFill 1.4s ease forwards;
+  animation-delay: 7s;
 }
 
-.milk-top {
+.logo-foam {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 48%;
-  height: 12px;
-  background: linear-gradient(180deg, #ead6bf 0%, #d5b08a 100%);
+  left: 4px;
+  right: 4px;
+  bottom: 48px;
+  height: 22px;
+  background: linear-gradient(180deg, #efe4d6 0%, #e1d1bf 100%);
+  border-radius: 20px 20px 10px 10px;
+  opacity: 0.95;
+}
+
+.logo-pour {
+  position: absolute;
+  top: 14px;
+  left: 42px;
+  width: 5px;
+  height: 0;
+  opacity: 0;
+  background: linear-gradient(180deg, #9c6232 0%, #693717 100%);
+  border-radius: 4px;
+  animation: logoPour 1.2s ease forwards;
+  animation-delay: 6.8s;
 }
 
 @keyframes beanDrop {
   0% {
-    top: 0;
+    top: -6px;
     opacity: 0;
-    transform: scale(0.75);
+    transform: scale(0.82) rotate(-8deg);
   }
   20% {
     opacity: 1;
   }
+  70% {
+    opacity: 1;
+  }
   100% {
-    top: 74px;
+    top: 28px;
     opacity: 0;
-    transform: scale(1);
+    transform: scale(1) rotate(8deg);
   }
 }
 
@@ -568,6 +625,13 @@ img {
   100% {
     height: 74px;
     opacity: 1;
+  }
+}
+
+@keyframes hideCoffeeStream {
+  to {
+    opacity: 0;
+    height: 0;
   }
 }
 
@@ -622,9 +686,43 @@ img {
   }
 }
 
+@keyframes moveCupsToLogo {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(170px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(190px);
+    opacity: 0;
+  }
+}
+
+@keyframes logoPour {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    height: 64px;
+    opacity: 1;
+  }
+}
+
+@keyframes logoCupFill {
+  0% { height: 0; }
+  100% { height: 58%; }
+}
+
 @media (max-width: 900px) {
   .machine-stage {
-    gap: 24px;
+    gap: 38px;
     padding: 20px 20px 72px;
   }
 
@@ -633,7 +731,7 @@ img {
     transform-origin: bottom center;
   }
 
-  .milk-glass {
+  .logo-coffee-wrap {
     transform: scale(0.9);
     transform-origin: bottom center;
   }
@@ -641,30 +739,29 @@ img {
 
 @media (max-width: 680px) {
   .coffee-scene {
-    min-height: 320px;
+    min-height: 340px;
     border-radius: 16px;
   }
 
   .machine-stage {
-    height: 320px;
-    gap: 10px;
-    padding: 8px 8px 56px;
+    height: 340px;
+    gap: 6px;
+    padding: 0 6px 56px;
     align-items: flex-end;
   }
 
   .machine-wrap {
     width: 360px;
-    height: 340px;
+    height: 355px;
     transform: scale(0.62);
     transform-origin: bottom center;
-    margin-left: -34px;
+    margin-left: -36px;
   }
 
-  .milk-glass {
+  .logo-coffee-wrap {
     transform: scale(0.72);
     transform-origin: bottom center;
-    margin-left: -28px;
-    margin-bottom: 2px;
+    margin-left: -40px;
   }
 
   .counter {
@@ -678,23 +775,23 @@ img {
   }
 
   .coffee-scene {
-    min-height: 280px;
+    min-height: 290px;
   }
 
   .machine-stage {
-    height: 280px;
+    height: 290px;
     gap: 0;
     padding: 0 0 48px;
   }
 
   .machine-wrap {
-    transform: scale(0.52);
-    margin-left: -52px;
+    transform: scale(0.5);
+    margin-left: -62px;
   }
 
-  .milk-glass {
-    transform: scale(0.58);
-    margin-left: -54px;
+  .logo-coffee-wrap {
+    transform: scale(0.56);
+    margin-left: -72px;
   }
 
   .counter {

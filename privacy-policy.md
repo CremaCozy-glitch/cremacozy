@@ -13,7 +13,7 @@ This policy explains what information CremaCozy ("we", "us") may collect and how
 ## Information we collect
 
 - **Information you send us.** If you email us, we receive your email address and message.
-- **Usage data. We use Google Analytics to understand how visitors use the site. It may collect anonymous data such as pages viewed, approximate location, browser and device type.
+- **Usage data.** We use Google Analytics to understand how visitors use the site. It may collect anonymous data such as pages viewed, approximate location, browser and device type.
 - **Cookies.** See our [Cookie Policy]({{ '/cookie-policy/' | relative_url }}).
 
 ## How we use it
@@ -22,7 +22,7 @@ To answer your messages, to understand which guides are useful, and to improve t
 
 ## Third parties
 
-- **Google Analytics** Google Analytics processes usage data under Google's own privacy policy.
+- **Google Analytics** processes usage data under Google's own privacy policy.
 - **Amazon.** Links to Amazon.com are affiliate links, and Amazon handles any data collected on its site under its own privacy notice.
 - **Google Fonts** serve the fonts used on this site, which means your browser requests them from Google.
 - **GitHub Pages** hosts this site and may log visitor requests.

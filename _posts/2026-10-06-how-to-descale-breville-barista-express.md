@@ -2,12 +2,39 @@
 layout: post
 title: "How to Descale a Breville Barista Express (Safely)"
 description: "Descale your Breville Barista Express step by step, based on Breville's own manual. See what the lights mean and what to do if it stops."
-last_updated: "2026-10-07"
+permalink: /how-to-descale-breville-barista-express/
+categories: [breville-barista-express, cleaning-descaling]
+section_title: Breville Barista Express
+section_url: /breville-barista-express/
+last_updated: 2026-10-07
+faq:
+  - q: "What does a solid CLEAN / DESCALE light mean on a Barista Express?"
+    a: "According to Breville's manual, a solid CLEAN / DESCALE light means the machine needs descaling. A flashing light means it needs a cleaning cycle with a cleaning tablet instead."
+  - q: "How do I put the Barista Express into descale mode?"
+    a: "Press and hold the 2 CUP button, then press and hold POWER as well. The POWER light flashes while the machine heats up. It is ready when the POWER, 1 CUP, CLEAN / DESCALE and HOT WATER / STEAM lights are all on and not blinking."
+  - q: "How long does each descaling round take?"
+    a: "The coffee side takes about 25 seconds, the steam side about 13 seconds and the hot water side about 8 seconds. That is roughly 46 seconds of pumping per round. The manual has you run two rounds with the solution and one rinse round with fresh water."
+  - q: "Does the PROGRAM button reset the descale light?"
+    a: "No. In the manual, holding PROGRAM until the machine beeps three times only returns the 1 CUP and 2 CUP shot volumes and the water temperature to their defaults. It is not a descale reset."
+  - q: "Can I descale a Barista Express with vinegar?"
+    a: "Breville's manual only describes its own descaling powder and gives no vinegar method. If you want to use something else, check with Breville Consumer Support first."
 ---
 
 You reach for your morning shot and a light you don't usually see is on. That's annoying, especially before coffee. The good news is that nothing is broken. The machine is asking to be descaled, which just means flushing out the mineral buildup (limescale) that water leaves inside.
 
 I own this machine too, so I know that little jolt when a new light turns on. Everything below follows Breville's instruction book for the BES870, the standard Barista Express. Where the manual doesn't say something, I'll tell you instead of guessing. I also checked a few popular guides against the manual, and some of them get things wrong. I point those out below.
+
+<div class="callout" markdown="1">
+**Quick answer:** A solid CLEAN / DESCALE light means it's time to descale. Mix one Breville descaling powder sachet in 1 L (34 fl oz) of water, enter descale mode by holding 2 CUP and then POWER, run the coffee, steam and hot water steps twice, then do one more round with fresh water to rinse.
+</div>
+
+<div class="toc" markdown="1">
+## In this guide
+{:.no_toc}
+
+* TOC
+{:toc}
+</div>
 
 {% assign descale_solid = site.static_files | where: "path", "/photo-descale-light-solid.jpg" | first %}
 {% if descale_solid %}
